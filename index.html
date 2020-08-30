@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santuário Santa Paulina</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="estilos/estilo.css" rel="stylesheet">
+
+</head>
+    <body>
+        <div>
+            <h5 class="titulo">Missas e Eventos do Santuário</h5>
+        </div>
+        
+        <div id= "bloco" class="row">
+            <div id="botoes"class="col col-md-2.6">
+                <div id="lista" class="list-group">
+                    <button class="calenda teste list-group-item focus"type="button" id="calendario"  onclick="showcalendario();">Calendário de Eventos</button>
+                    <button class="teste list-group-item"type="button" id="peregrinacao"onclick="showperegrinacao()">Peregrinação</button>
+                    <button class="teste list-group-item"type="button" id="pedidos">Pedidos de Oração</button>
+                    <button class="teste list-group-item"type="button" id="novena">Novena de Santa Paulina</button>
+                    <button class="teste list-group-item"type="button" id="musicas">Músicas de Santa Paulina</button>
+                </div>
+            </div>
+            <div id="colunamovel"class="col col-md-3">
+                <div id=changecontent class="bluebox">
+                    <div class="titlebox"><h2>Calendário de Eventos</h2></div>
+                        <div class="row">
+                            <div class="date col col-md-2">14/12:</div> <div class="textlist col col-md-10">Natal Luz Solidário com Santa Paulina</div>
+                            <div class="date col col-md-2">06/12:</div> <div class="textlist col col-md-10">Peregrinação Noturna</div>
+                            <div class="date col col-md-2">09/12:</div> <div class="textlist col col-md-10">Missas em honra à Santa Paulina</div>
+                            <div class="date col col-md-2">15/12:</div> <div class="textlist col col-md-10">Missa pela TV Aparecida e Facebook</div>
+                            <div class="date col col-md-2">24/11:</div> <div class="textlist col col-md-10">Missa pelas Vocações</div>
+                            <a class="more" href="https://santuariosantapaulina.org.br/event/" target="_blank"> Saiba Mais ></a>
+                        </div>
+                </div>
+                <div id=changecontent2 class="bluebox3">
+                    <div class="titlebox"><h2>Peregrinação</h2></div>
+                        <div>
+                            <div class="textlist">Lorem Ipsum is simply dummy text</div>
+                            <div class="textlist">of the printing and typesetting industry. Lorem Ipsum has been the</div>
+                            <div class="textlist">of the printing and typesetting industry. Lorem Ipsum has been the</div>
+                            <div class="textlist">an unknown printer took a galley of type and scrambled</div>
+                            <div class="textlist">it to make a type specimen book. It has survived not only five</div>
+                            <a class="more" href="https://santuariosantapaulina.org.br/peregrinacao/" target="_blank"> Saiba Mais ></a>
+                        </div>
+                </div>
+            </div>
+            <div id="colunafoto"class="col col-md-3">
+                <img src="img\santa.png" class=foto>
+            </div>
+            <div id="colunamissa"class="col col-md-3">
+                <div id=horarios Class="bluebox2">
+                    <h2>Horários de Missas</h2>
+                    Segundas-feiras às 10h<br>
+                    Terça-feira a Sábado: às 10h e 15h<br>
+                    Todo Sábado: às 18h30 (missa na capela Nossa Senhora de Lourdes)<br>
+                    Domingos: às 8h, 10h, 14h e 16h<br>
+                    3º Domingo do mês: 6h (missa com transmissão pela TV Aparecida e Facebook) e missa às 8h, 10h, 14h e às 16h
+                </div>
+            </div>
+        </div>
+        <template class="temptest">
+            <h2>Horários de Missas</h2>
+                    Segundas-feiras às 10h<br>
+                    Terça-feira a Sábado: às 10h e 15h<br>
+                    Todo Sábado: às 18h30 (missa na capela Nossa Senhora de Lourdes)<br>
+                    Domingos: às 8h, 10h, 14h e 16h<br>
+                    3º Domingo do mês: 6h (missa com transmissão pela TV Aparecida e Facebook) e missa às 8h, 10h, 14h e às 16h
+        </template>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                
+                <script>
+                var showcalendario = document.getElementById("calendario")
+                var showperegrinacao = document.getElementById("peregrinacao");
+                var changebox = document.getElementById("changecontent");
+                var titlebox = document.getElementById("changecontent2");
+                
+                showcalendario.onclick = function (e){
+                    e.preventDefault();
+                    changebox.style.display = "block";
+                    titlebox.style.display = "none";
+                    showcalendario.classList.add('focus');
+                    showperegrinacao.classList.remove('focus');
+                };
+                
+                showperegrinacao.onclick = function (e){
+                    e.preventDefault();
+                    changebox.style.display = "none";
+                    titlebox.style.display = "block";
+                    showperegrinacao.classList.add('focus');
+                    showcalendario.classList.remove('focus');
+                    
+                };
+                </script>
+    </body>
+</html>
