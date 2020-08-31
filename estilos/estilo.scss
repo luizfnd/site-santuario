@@ -1,13 +1,174 @@
+@charset "UTF-8";
+
 $white: #ffff;
-$blue: #0900ba;
+$blue:#005d9a;
 
 .titulo{
-    color: #005d9a;
+    color: $blue;
     text-align: center;
     padding-top: 50px;
     font-size: 30pt;
 }
 
-h1{
-    font-size: 30px;
+#bloco{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.list-group{
+    background: $white;
+}
+
+.teste{
+    color: #5c5c5c;
+    background-color: #f9f9f9;
+    padding: 1vw 0 1vw 3vw;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.9vw;
+    
+    &:hover{
+        color:  $blue;
+        background-color: $white;
+    }
+    
+    &:focus{
+        outline: none;
+        
+    }
+    &:first-child{
+        border-top-right-radius: 0;
+    }
+
+    &:last-child{
+        border-bottom-right-radius: 0;
+    }
+    
+}
+
+.focus{
+    outline: none;
+    background-color:  $blue;
+    color: $white;
+    border-right: none;
+    
+    &:hover{
+        outline: none;
+        background-color:  #00558d;
+        color: $white;
+        border-right: none;
+    }
+}
+
+#colunamovel{
+    padding:0 0 0 0;
+}
+
+#colunamissa{
+    padding:0 0 0 0px;
+}
+
+#colunafoto{
+    height: 20.85vw;
+    margin: 0 1.3vw 0 1.3vw;
+    padding: 0 0 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foto {
+    vertical-align: middle;
+    border-style: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#botoes{
+    max-width: 100%;
+    padding: 0 0 0 0;
+    margin-left: 0px;
+}
+
+.bluebox{
+    color: $white;
+    background-color: $blue;
+    padding: 20px;
+    /* height: 400px; */
+    height: 20.85vw;
+    width: 100%;
+    border-radius: 0 5px 5px 5px;
+    display: block;
+}
+
+.bluebox3{
+    color: $white;
+    background-color: $blue;
+    padding: 20px;
+    height: 20.85vw;
+    width: 100%;
+    border-radius: 0 5px 5px 5px;
+    display: none;
+}
+.bluebox2{
+    color: $white;
+    background-color: $blue;
+    padding: 20px;
+    height: 20.85vw;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.textlist{
+    padding: 6px 0 0 8px;
+    height: 40px;
+    font-size: 1vw;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 6px;
+    
+    &:hover{
+        background-color: #174a7f;
+        }
+}
+
+.titlebox h2{
+    font-size: 1.6vw;
+}
+
+
+.date{
+    padding: 6px 0 0 0;
+    height: 40px;
+    text-align: center;
+    color: $white;
+    background-color: #174a7f;
+    margin-right: 5px;
+    margin-left: -5px;
+    font-size: 1vw;
+}
+
+.more{
+    color: $white;
+    margin-top: 20px;
+    padding: 7px;
+    
+    &:hover{
+        color: $white;
+        background-color: #174a7f;
+        text-decoration: none;
+    }
+}
+
+
+.titlebox{
+    margin-bottom: 30px;
 }
