@@ -137,20 +137,27 @@
   margin-bottom: 30px; }
 
 .card {
-  margin: 0px 10px 0px 10px;
-  border: none;
-  background-color: #005d9a; }
+  margin: 0px 10px -1px 10px;
+  border-radius: 0; }
+  .card:first-child {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem; }
+  .card:last-child {
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem; }
 
 .card-header {
   background-color: #f9f9f9;
   cursor: pointer;
   text-align: left;
-  padding: 0; }
+  padding: 0;
+  border-bottom: 0; }
 
 .btn-link {
   color: #ffff;
   background-color: #005d9a;
   text-align: left;
+  font-size: 1.4rem;
   width: 100%;
   height: auto;
   padding: 20px 0px 20px 40px;
@@ -160,6 +167,8 @@
     color: #ffff;
     background-color: #005d9a;
     text-decoration: none; }
+  .btn-link:focus {
+    outline: none; }
 
 button.collapsed {
   color: #5c5c5c;
@@ -171,20 +180,29 @@ button.collapsed {
     background-color: #ffff;
     text-decoration: none; }
 
-.card-body {
+.collapse {
+  background-color: #005d9a; }
+
+.collapsing {
+  background-color: #005d9a; }
+
+.show {
   background-color: #005d9a; }
 
 @media (min-width: 1081px) {
   .mobilecontent {
     display: none; } }
 @media (max-width: 1080px) {
+  .mobilecontent {
+    margin: 80px 0; }
+
   .desktopcontent {
     display: none; }
 
   .textlist {
     padding: 6px 0 0 8px;
     height: 40px;
-    font-size: 14pt;
+    font-size: 13pt;
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -193,6 +211,9 @@ button.collapsed {
     background-color: #005d9a;
     color: #ffff; }
     .textlist:hover {
-      background-color: #005d9a; } }
+      background-color: #005d9a; }
+
+  .date {
+    font-size: 13pt; } }
 
 /*# sourceMappingURL=estilo.css.map */

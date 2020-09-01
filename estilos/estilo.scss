@@ -176,33 +176,51 @@ $blue:#005d9a;
 }
 
 .card{
-    margin: 0px 10px 0px 10px;
-    border: none;
-    background-color: $blue;
+    margin: 0px 10px -1px 10px;
+    border-radius: 0;
+
+    &:first-child{
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+    }
+
+    &:last-child{
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+    }
+    
 }
+
 .card-header{
     background-color: #f9f9f9;
     cursor: pointer;
     text-align: left;
     padding: 0;
+    border-bottom: 0;
 }
 
 .btn-link{
-    color: $white;
-    background-color: $blue;
-    text-align: left;
-    width: 100%;
-    height: auto;
-    padding: 20px 0px 20px 40px;
-    margin-bottom: -8px;
-    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+     color: $white;
+     background-color: $blue;
+     text-align: left;
+     font-size: 1.4rem;
+     width: 100%;
+     height: auto;
+     padding: 20px 0px 20px 40px;
+     margin-bottom: -8px;
+     transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+     
 
     &:hover{
-        color: $white;
-        background-color: $blue;
-        text-decoration: none;
+         color: $white;
+         background-color: $blue;
+         text-decoration: none;
     }
+
+    &:focus{
+        outline: none;
     
+ }
 }
 
 button.collapsed{
@@ -216,28 +234,36 @@ button.collapsed{
         background-color: $white;
         text-decoration: none;
     }
+      
 }
-
-.card-body{
+.collapse{
+    background-color: $blue; 
+}
+.collapsing{
+    background-color: $blue;    
+}
+.show{
     background-color: $blue;
-    
-
 }
-
 
 @media (min-width: 1081px){
+    
     .mobilecontent{
         display: none;
     }
 }
 @media (max-width: 1080px){
+    
+    .mobilecontent{
+        margin: 80px 0;
+    }
     .desktopcontent{
         display:none;
     }
     .textlist{
         padding: 6px 0 0 8px;
         height: 40px;
-        font-size: 14pt;
+        font-size: 13pt;
         display: block;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -250,5 +276,8 @@ button.collapsed{
             background-color: $blue;
         }
     }
-    
+
+    .date{
+        font-size: 13pt;
+    }
 }
