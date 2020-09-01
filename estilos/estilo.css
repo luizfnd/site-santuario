@@ -36,12 +36,14 @@
   outline: none;
   background-color: #005d9a;
   color: #ffff;
-  border-right: none; }
+  border-color: #005d9a;
+  border: 1px solid #005d9a; }
   .focus:hover {
     outline: none;
-    background-color: #00558d;
+    background-color: #005d9a;
     color: #ffff;
-    border-right: none; }
+    border-color: #005d9a;
+    border: 1px solid #005d9a; }
 
 #colunamovel {
   padding: 0 0 0 0; }
@@ -133,5 +135,64 @@
 
 .titlebox {
   margin-bottom: 30px; }
+
+.card {
+  margin: 0px 10px 0px 10px;
+  border: none;
+  background-color: #005d9a; }
+
+.card-header {
+  background-color: #f9f9f9;
+  cursor: pointer;
+  text-align: left;
+  padding: 0; }
+
+.btn-link {
+  color: #ffff;
+  background-color: #005d9a;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  padding: 20px 0px 20px 40px;
+  margin-bottom: -8px;
+  transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out; }
+  .btn-link:hover {
+    color: #ffff;
+    background-color: #005d9a;
+    text-decoration: none; }
+
+button.collapsed {
+  color: #5c5c5c;
+  background-color: #ffff;
+  transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+  margin: 0; }
+  button.collapsed:hover {
+    color: #5c5c5c;
+    background-color: #ffff;
+    text-decoration: none; }
+
+.card-body {
+  background-color: #005d9a; }
+
+@media (min-width: 1081px) {
+  .mobilecontent {
+    display: none; } }
+@media (max-width: 1080px) {
+  .desktopcontent {
+    display: none; }
+
+  .textlist {
+    padding: 6px 0 0 8px;
+    height: 40px;
+    font-size: 14pt;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 6px;
+    background-color: #005d9a;
+    color: #ffff; }
+    .textlist:hover {
+      background-color: #005d9a; } }
 
 /*# sourceMappingURL=estilo.css.map */
