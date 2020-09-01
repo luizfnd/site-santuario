@@ -172,3 +172,56 @@ $blue:#005d9a;
 .titlebox{
     margin-bottom: 30px;
 }
+
+.card{
+    margin: 0px 10px 0px 10px;
+    border: none;
+}
+.card-header{
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.card-header button{
+    color: #5c5c5c;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 20px 40px;
+}
+
+.card-header button:hover{
+    background-color:  #005d9a;
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+@media (min-width: 1081px){
+    .mobilecontent{
+        display: none;
+    }
+}
+@media (max-width: 1080px){
+    .desktopcontent{
+        display:none;
+    }
+    .textlist{
+        padding: 6px 0 0 8px;
+        height: 40px;
+        font-size: 14pt;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 6px;
+        background-color: #174a7f;
+        color: white;
+    }
+    
+    .textlist:hover{
+        background-color: #174a7f;
+    }
+}
