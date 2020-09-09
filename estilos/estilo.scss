@@ -184,9 +184,10 @@ $blue:#005d9a;
         border-top-right-radius: .25rem;
     }
 
-    &:last-child{
-        border-bottom-left-radius: .25rem;
+    &:last-child {
+        margin-bottom: 0;
         border-bottom-right-radius: .25rem;
+        border-bottom-left-radius: .25rem;
     }
     
 }
@@ -219,6 +220,7 @@ $blue:#005d9a;
 
     &:focus{
         outline: none;
+        text-decoration: none;
     
  }
 }
@@ -244,6 +246,10 @@ button.collapsed{
 }
 .show{
     background-color: $blue;
+}
+
+.cardbody{
+    color: $white;
 }
 
 @media (min-width: 1081px){
@@ -279,5 +285,17 @@ button.collapsed{
 
     .date{
         font-size: 13pt;
+    }
+
+    #colunafoto {
+        height: auto;
+        width: auto;
+        margin: 30px 10px;
+    }
+
+    .bluebox2{
+        height: 349px;
+        width: auto;
+        margin: 30px 10px;
     }
 }
